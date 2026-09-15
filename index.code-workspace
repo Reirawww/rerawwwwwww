@@ -1,11 +1,64 @@
-{
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../Downloads/New folder"
-		}
-	],
-	"settings": {}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dough-Cat Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="bakery">
+  <main class="page-shell">
+    <header class="hero">
+      <div class="cat-badge" aria-hidden="true">🐱</div>
+      <div>
+        <p class="eyebrow">Welcome to</p>
+        <h1>Dough-Cat Bakery</h1>
+        <p class="tagline">Warm treats, tiny paws, big dreams.</p>
+      </div>
+    </header>
+
+    <div class="cat-garland" aria-hidden="true"><span>🐾</span><span>🐱</span><span>🐾</span><span>😺</span><span>🐾</span></div>
+
+    <section class="stats-card" aria-labelledby="stats-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Your little shop</p>
+          <h2 id="stats-title">Bakery supplies</h2>
+        </div>
+        <div class="header-stats">
+          <div class="coin-count" aria-label="Coins"><span aria-hidden="true">💰</span> <span id="coins">0</span></div>
+          <div class="rating-count" aria-label="Shop rating"><span aria-hidden="true">⭐</span> <span id="rating">5.00</span>/5</div>
+        </div>
+      </div>
+      <div id="inventory" class="inventory-grid"></div>
+    </section>
+
+    <section aria-labelledby="recipes-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Fresh from the oven</p>
+          <h2 id="recipes-title">Recipes</h2>
+        </div>
+        <span class="cat-note" aria-hidden="true">😺</span>
+      </div>
+      <div id="recipe-list" class="recipe-grid"></div>
+    </section>
+
+    <section class="customers-section" aria-labelledby="customers-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A little queue is forming</p>
+          <h2 id="customers-title">Customers</h2>
+        </div>
+        <span class="cat-note" aria-hidden="true">🐾</span>
+      </div>
+      <div id="customer-list" class="customer-grid"></div>
+    </section>
+
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+
+    <a class="primary-button shop-link" href="ingredients.html">🛒 Ingredient Shop</a>
+  </main>
+</body>
+</html>
